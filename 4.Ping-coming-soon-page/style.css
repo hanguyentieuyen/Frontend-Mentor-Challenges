@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+main{
+    max-width: 850px;
+    text-align: center;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+h1 span{
+    color: hsl(0, 0%, 59%);   
+    font-weight: 300;
+}
+
+.p-sub{
+    color: hsl(209, 33%, 12%);
+}
+
+form{
+  margin-top: 50px;
+  text-align: left;
+  display: flex;
+
+}
+
+.form-input{
+    flex: 0.7;
+}
+
+input{
+    width: 100%;
+    font-size: 16px;
+    color: hsl(223, 100%, 88%);
+    border-radius: 50px;
+    border: 2px solid hsl(223, 100%, 88%);
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 20px 25px;
+ 
+}
+
+input::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+input.error {
+	border-color: hsl(354, 100%, 66%);
+}
+
+input.error::placeholder {
+	color: hsl(354, 100%, 66%);
+}
+
+form small{
+    color: hsl(354, 100%, 66%);
+    margin:0 20px 40px;
+    font-style: italic;
+    
+    display: none;
+    /* z-index: 100; */
+}
+
+
+form input:focus{
+    outline: none;
+}
+
+button{
+    background-color: hsl(223, 87%, 63%);
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 20px 0;
+	margin-left: 20px;
+	flex: 0.3;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+form button:focus{
+    outline: none;
+}
+
+.dashboard{
+   max-width: 100%;
+   margin: 60px 0;
+}
+
+.social-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.social-links a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 59%);
+    margin-left: 20px;
+    color: hsl(223, 87%, 63%);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a:hover{
+    color: #fff;
+    background-color: hsl(223, 87%, 63%) ;
+}
+
+.p-footer{
+    color:  hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+
+@media srceen and (max-width: 600px){
+    form{
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-input{
+        width: 100%;
+    }
+
+    button{
+        margin-left: 0;
+        width: 100%;
+    }
+}

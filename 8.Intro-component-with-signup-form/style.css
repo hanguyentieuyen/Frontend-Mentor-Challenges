@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    padding: 30px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.flex1{
+    flex: 0.5;
+    margin-right: 30px;
+}
+
+h1{
+    font-size: 50px;
+    color: #ffffff;
+    
+}
+
+p{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.flex2{
+    flex: 0.5;
+    margin-left: 30px;
+} 
+
+.flex2-container{
+   
+}
+
+form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    padding: 30px 50px;
+}
+
+
+
+input{
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsl(249, 10%, 26%)  ;
+    color: hsl(249, 10%, 26%) ;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+}
+
+.btn-blue{
+    width: 100%;
+    color: #ffffff;
+    background-color: hsl(248, 32%, 49%) ;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.btn-green{
+    width: 100%;
+    color: #ffffff;
+    background-color:hsl(154, 59%, 51%) ;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+form p{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+}
+
+form span{
+    color: hsl(0, 100%, 74%) ;
+}
+
+small{
+    
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+    
+    .main-container{
+        flex-direction: column;
+    }
+}
