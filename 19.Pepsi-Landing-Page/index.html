@@ -1,4 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pepsi Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <section>
+        <header>
+            <a href="#"><img src="/images/logo.png" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle()"></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="content">
+                <h2>That's what<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/pepsi001.png" class="imgPepsi">
+            </div>
+            
+        </div>
+
+        <ul class="thumb">
+            <li><img src="./images/pepsi001.png" onclick="imgSlider('./images/pepsi001.png'); changeColor('#0065C3')"></li>
+            <li><img src="./images/pepsi002.png" onclick="imgSlider('./images/pepsi002.png'); changeColor('#878787')"></li>
+            <li><img src="./images/pepsi003.png" onclick="imgSlider('./images/pepsi003.png'); changeColor('#000000')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="./images/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/twitter.png"></a></li>
+            <li><a href="#"><img src="./images/instagram.png"></a></li>
+        </ul>
+      </section>
+      <script src="script.js"></script>
+    </body>
+    
 </html>
